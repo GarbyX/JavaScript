@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title> JavaScript Program - diminishing asterisks </title>
+
+  <style>
+
+    body {
+      width:1300px;
+      color: #fff;
+      background-color: #c0c0c0;
+      height: 650px;
+    }
+
+    div {
+      width: 1000px;
+      position: relative;
+      left: 130px;
+      top: 30px;
+      padding: 40px;
+      padding-top: 10px;
+      color: lightskyblue;
+      background-color: #000;
+      height: 520px;
+    }
+
+    div h1 {
+      padding-top: 0px;
+      text-align: center;
+      color: #000;
+      background-color: lightskyblue;
+    }
+
+    h2 {
+      color: #fff;
+      text-align: center;
+      font-size:20px;
+      text-transform: uppercase;
+      margin-top: 0px; /*clears space above header*/ 
+    }
+
+    p {
+      color: rgb(128,255,0);
+      font-size:14px;
+    }
+
+  </style>
+
+  <!-- <script src="js/index.js"></script> -->
+
+</head>
+
+<body>
+
+<div> 
+
+<h1></u> Program - diminishing asterisks </u></h1>
+
+  <p> This is a JavaScript Program that displays the asterisk sign in a decreasing manner by 5 stars for each iteration starting from 95 asterisks to nil. Last updated 28 July 2020. </p>
+
+  <br><hr width="75%"><br>
+
+<!-- Beginning of JS code -->
+
+  <script>
+
+alert("JavaScript Program \nDiminishing asterisks ");
+
+document.writeln("<h2> Law of diminishing returns. </h2>");
+
+// Code start.
+
+for (var i = 95; i >= 0; i-=5)
+ {
+    for (x = 0; x < 6 - i; x++) {}
+       for (x = 6 - i; x <= 5; x++)
+    document.write("*");
+    document.write("</br>");
+}
+
+// Code end. 
+
+</script>
+
+</div>
+  
+</body>>
+</body>
+</html>
