@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title> JavaScript Program - Username Formatting </title>
+
+  <style>
+
+    body {
+      width: 1300px;
+      color: #000;
+      background-color: #c0c0c0;
+    }
+
+    div {
+      width: 800px;
+      position: relative;
+      left: 220px;
+      top: 40px;
+      padding: 60px;
+      padding-top: 30px;
+      font-family: Florence, cursive; //Blippo,Trattatello,fantasy;
+      color: #ffff00;
+      background-color: #000;
+      height: 450px;
+    }
+
+    pre {
+      color: #fff;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    h2 {
+      margin: 0px;
+      color: #fff;
+      text-align: center;
+      text-decoration: underline;
+    }
+    
+    p {
+      color: #0000ff;
+      text-align: center;
+      font-size: +2;
+      font-style: italic;
+    }
+
+  </style>
+
+  <!-- <script src="js/index.js"></script> -->
+
+</head>
+
+<body>
+  <div>
+    <h2> JavaScript Program - Text Formatting </h2>
+
+    <pre> A JavaScript Program for formatting user name into title case after key entry.
+
+Write a prog that accepts user name in various formats and displays in title case.
+ e.g. olaiya joshua or or oLAIYA jOSHUA but use alert to diplay: Olaiya Joshua.
+ </pre>
+
+    <hr><br/>
+
+    <!-- START OF JAVASCRIPT CODE -->
+
+    <script>
+
+function tC(name)
+{
+var name_lw = name.toLowerCase();
+var name_s = name_lw.substring(1);
+var n_U = name.charAt(0);
+var n_U1 = n_U.toUpperCase();
+return(n_U1 + name_s);
+}
+
+      alert("JavaScript Program - Username Format.");
+
+var firstname = (prompt("Enter First name: "));
+alert("First name: '" + firstname + "' saved");
+
+var surname = (prompt("Enter Surname: "));
+alert("Last name: '" + surname + "' saved.");
+
+	  confirm("Click OK to autocorrect data.");
+	  alert("Your full name is: " + tC(firstname) + " " + tC(surname));
+
+document.writeln( "First name: " + firstname + "<br/>");
+document.writeln( "Surname: " + surname + "<br/><br/>");
+
+document.writeln("<p><font color= #ff0011> Correcting data ... </font></p>");
+
+document.writeln("Full name: " + tC(firstname) + " " + tC(surname) + "<br/>");
+
+document.writeln("<p><font color='lightskyblue'> Saving to database ... Done </font></p>" );
+
+    </script>
+
+    <!-- END OF JAVASCRIPT CODE -->
+
+    <hr><br/>
+
+    <pre> End of Program. </pre>
+
+  </div>
+
+</body>
+</html>

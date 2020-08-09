@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title> JavaScript Program - Username Formatting </title>
+
+  <style>
+    body {
+      width: 1300px;
+      color: lightskyblue;
+      background-color: #c0c0c0;
+    }
+
+    div {
+      width: 800px;
+      position: relative;
+      left: 250px;
+      top: 70px;
+      padding: 60px;
+      border: 60px;
+      color: #ffff00;
+      background-color: #000;
+      height: 300px;
+    }
+
+    pre {
+      color: #fff;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    h2,
+    p {
+      color: #fff;
+      text-align: center;
+    }
+  </style>
+
+  <!-- <script src="js/index.js"></script> -->
+
+</head>
+
+<body>
+  <div>
+    <h2><u> JavaScript Program - User Name Formatting </u></h2>
+
+    <pre> A JavaScript Program for formatting user name into title case.
+
+  2. Write a prog that accepts user name in various formats and displays in title case.
+     e.g. olaiya joshua or or oLAIYA jOSHUA but use alert to diplay: Olaiya Joshua.
+
+ </pre>
+
+    <hr><br>
+
+    <!-- START OF JAVASCRIPT CODE -->
+
+    <script>
+
+      function titleCase(str) 
+      {
+        var x = str.toLowerCase().split(" ");                                            // assigns to parameter in lowercase & 'splitted' into an array
+
+        for (var i = 0; i < x.length; i++)                                      		 // loops thru x's length (array)
+        {
+          x[i] = x[i].charAt(0).toUpperCase() + x[i].substring(1);                       // coverts only first letter to caps & concats to rem letters
+        }
+        return x.join(" ");																 // pieces the string back together					
+      }
+
+      alert("JavaScript Program - Username Formatting.");
+
+      var firstname = (prompt("Enter First name: "));
+      var surname = (prompt("Enter Surname: "));
+
+      alert("Your name is " + titleCase(firstname + " " + surname));
+
+      document.writeln(titleCase(firstname + (" ")));
+      document.writeln(titleCase(surname));
+
+
+    </script>
+
+    <!-- END OF JAVASCRIPT CODE -->
+
+    <br /></br>
+    <hr>
+
+    <p> End of Program. </p>
+
+  </div>
+
+
+</body>
+
+</html>

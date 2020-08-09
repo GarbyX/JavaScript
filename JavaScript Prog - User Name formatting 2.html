@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title> JavaScript Program - Username Formatting </title>
+
+</head>
+
+<body>
+  <div>
+    <h2><u> JavaScript Program - User Name Formatting </u></h2>
+
+    <pre> A JavaScript Program for formatting user name into title case.
+
+  2. Write a prog that accepts user name in various formats and displays in title case.
+     e.g. olaiya joshua or or oLAIYA jOSHUA but use alert to diplay: Olaiya Joshua.
+
+ </pre>
+
+    <hr><br>
+
+    <!-- START OF JAVASCRIPT CODE -->
+
+    <script>
+
+function tC (name)
+
+{
+var name_lw = name.toLowerCase();
+
+var name_s = name_lw.substring(1);
+
+var n_U = name.charAt(0);
+
+var n_U1 = n_U.toUpperCase();
+
+return(n_U1 + name_s);
+}
+
+
+      alert("JavaScript Program - Username Formatting.");
+
+      var firstname = (prompt("Enter First name: "));
+      alert("First name: '" + firstname + "' saved");
+
+
+var surname = (prompt("Enter Surname: "));
+alert("Last name: '" + surname + "' saved.");
+
+confirm("Click OK to autocorrect data.");
+
+alert(tC(firstname) + " " + tC(surname));
+
+document.writeln( "First name typed: " + firstname + "<br/>");
+document.writeln( "Surname name typed: " + surname + "<br/><br/>");
+
+document.writeln("<p><i><font color= #ff0011, size = +2> Correcting data ... </font></i></p>");
+
+ document.writeln(tC(firstname) + " " + tC(surname) + "<br/>");
+
+document.writeln("<p><i><font color= #ff0011, size = +2> Saving to database ... Done </font></i></p>" );
+
+document.writeln("Database update successful <br/>");
+
+/*
+
+var name = "gabriel";
+
+document.writeln(name + "<br>");
+
+
+var name_l = name.length;
+document.writeln(name_l + "<br>");
+
+var name_lw = name.toLowerCase();
+document.writeln(name_lw + "<br>");
+
+var name_s = name_lw.substring(1);
+document.writeln(name_s + "<br>");
+
+var n = name_lw.charAt().toUpperCase;
+document.writeln(n + "<br>");
+
+var n_U = name.charAt(0);
+document.writeln(n_U + "<br>");
+
+var n_U1 = n_U.toUpperCase();
+document.writeln(n_U1 + "<br>");
+
+
+document.writeln(n_U1 + name_s + "<br>");
+
+*/
+
+    </script>
+
+    <!-- END OF JAVASCRIPT CODE -->
+
+    <br /></br>
+    <hr>
+
+    <p> End of Program. </p>
+
+  </div>
+
+
+</body>
+
+</html>
