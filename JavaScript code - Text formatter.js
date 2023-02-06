@@ -1,16 +1,13 @@
- 
-    <script>
 
-function tC(name)
-{
-var name_lw = name.toLowerCase();
-var name_s = name_lw.substring(1);
-var n_U = name.charAt(0);
-var n_U1 = n_U.toUpperCase();
-return(n_U1 + name_s);
+function tC(name) {
+    var name_lw = name.toLowerCase();
+    var name_s = name_lw.substring(1);
+    var n_U = name.charAt(0);
+    var n_U1 = n_U.toUpperCase();
+    return(n_U1 + name_s);
 }
 
-      alert("JavaScript Program - Username Format.");
+alert("JavaScript Program - Username Format.");
 
 var firstname = (prompt("Enter First name: "));
 alert("First name: '" + firstname + "' saved");
@@ -30,4 +27,3 @@ document.writeln("Full name: " + tC(firstname) + " " + tC(surname) + "<br/>");
 
 document.writeln("<p><font color='lightskyblue'> Saving to database ... Done </font></p>" );
 
-    </script>
