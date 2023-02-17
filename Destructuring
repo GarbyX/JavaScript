@@ -1,0 +1,53 @@
+// Here we extracts single prop
+
+const user = {
+  id: 1,
+  name: 'Uchenna',
+  age: 22
+};
+const {name} = user;
+console.log(name);                          // outputs: Uchenna
+
+// Extracts the props and assigns it to a different name
+
+const user = {
+  id: 2,
+  name: 'Somto',
+  age: 24
+};
+const {name: callSign} = user;
+console.log(callSign);                      // outputs: Somto
+
+// Destructuring Nested Objects
+
+const user = {
+  id: 3,
+  name: 'Innocent',
+  age: 27,
+  academia: {
+    degreeType: 'Masters'
+  }
+};
+const {academia: {degreeType}} = user;
+console.log(degreeType);                    // outputs: Masters
+
+// Destructuring with Nested Object omitted
+
+const user = {
+  id: 4,
+  name: 'Felix',
+  age: 21,
+};
+const {academia: {degreeType}} = user;
+console.log(degreeType);                    // outputs: TypeError: Cannot match against 'undefined' or 'null'.
+
+// Destructuring with Nested Object omitted (safe execution)
+
+const user = {
+  id: 4,
+  name: 'Felix',
+  age: 21,
+};
+const {academia: {degreeType} = {}} = user; // i.e. adding a default value
+console.log(degreeType);                    // outputs: undefined
+
