@@ -8,6 +8,7 @@ let bar = () => {
 }
 foo() // outputs: "workflow1"
 bar() // outputs: "workflow1"
+bar2() // outputs: "workflow1"
 
 //
 
